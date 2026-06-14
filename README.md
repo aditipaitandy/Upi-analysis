@@ -1,14 +1,10 @@
 # UPI Transaction Ecosystem: Performance Diagnostics & SQL Analysis
-# UPI Transaction Ecosystem: Performance Diagnostics & SQL Analysis
+
 
 <p align="left">
   <img src="https://img.shields.io/badge/SQL-Advanced-blue?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/Data%20Analysis-Project-green?style=for-the-badge&logo=databricks&logoColor=white" />
-  <img src="https://img.shields.io/badge/UPI-FinTech-orange?style=for-the-badge&logo=google-pay&logoColor=white" />
-  <img src="https://img.shields.io/badge/Database-Optimization-red?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
-
-![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge&logo=mysql&logoColor=white)
 
 An end-to-end relational database diagnostics and performance evaluation of a UPI transaction ecosystem. Mapped against 150 transaction events with a total processed volume of ₹4,13,198.86, this project identifies system bottlenecks, high-growth Tier-2 hubs, and high-value transaction risks.
 
@@ -31,8 +27,9 @@ Key areas of analysis include:
 
 ## 📂 Project Report
 
-👉 [View Full Project PDF](https://github.com/aditipaitandy/Upi-analysis/blob/main/UPI%20Transaction%20Analysis.pdf)
-
+<a href="https://github.com/aditipaitandy/Upi-analysis/blob/main/UPI%20Transaction%20Analysis.pdf" target="_blank">
+  <img src="https://img.shields.io/badge/View%20Full%20PDF-Click%20Here-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" />
+</a>
 ---
 
 ## 🗄️ Database Structure
