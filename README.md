@@ -2,61 +2,30 @@
 
 An end-to-end relational database diagnostics and performance evaluation of a UPI transaction ecosystem. Mapped against 150 transaction events with a total processed volume of ₹4,13,198.86, this project isolates severe gateway timeout thresholds, identifies high-growth Tier-2 geographic hubs, and establishes a concrete risk mitigation roadmap for high-value cohorts.
 
-📌 Project Overview
+## Project Overview
 
-Digital payment networks represent the backbone of the modern digital economy, but system latency and gateway timeouts can lead to massive revenue drop-offs. This project acts as a database-driven performance audit to answer critical system questions:
+Digital payment systems face latency, gateway failures, and uneven load distribution. This project analyzes:
 
-Where and why are transactions failing?
+- Transaction failure patterns  
+- Merchant category friction  
+- Regional spending behavior  
+- High-value user concentration risk  
 
-Which merchant channels suffer the highest friction?
+## Database Schema
 
-How does consumer spending behave across regional demographics?
+upi_users:
+user_id (PK), age, gender, city, city_tier
 
-Where do high-value systemic concentration risks exist?
+upi_transactions:
+txn_id (PK), user_id (FK), txn_date, txn_time, amount, merchant_category, city, status, payment_mode, device_type
 
-🗄️ Relational Database Schema
+upi_merchant_categories:
+merchant_id (PK), category, channel, avg_rating
 
-                  +-----------------------+
-                  |       upi_users       |
-                  +-----------------------+
-                  | user_id (PK)          |
-                  | age                   |
-                  | gender                |
-                  | city                  |
-                  | city_tier             |
-                  +-----------------------+
-                              |
-                              |
-                  +-----------------------+
-                  |   upi_transactions    |
-                  +-----------------------+
-                  | txn_id (PK)           |
-                  | user_id (FK)          |
-                  | txn_date              |
-                  | txn_time              |
-                  | amount                |
-                  | merchant_category     |
-                  | city                  |
-                  | status                |
-                  | payment_mode          |
-                  | device_type           |
-                  +-----------------------+
-                              |
-                              |
-                  +---------------------------+
-                  | upi_merchant_categories   |
-                  +---------------------------+
-                  | merchant_id (PK)          |
-                  | category                  |
-                  | channel                   |
-                  | avg_rating                |
-                  +---------------------------+
+## SQL Analysis
 
-📊 Performance Diagnostics & Core Queries
+### 1. Failure Rate
 
-1. Systemic Checkout Friction Audit
-
--- Failure rate percentage
 SELECT 
     ROUND(
         SUM(CASE WHEN status = 'Failed' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 
@@ -64,9 +33,11 @@ SELECT
     ) AS failure_rate_percent
 FROM upi_transactions;
 
-Resulting Diagnostic: A staggering 51.33% gateway failure rate (77 out of 150 transactions dropped), indicating extreme systemic checkout friction.
+Insight: 51.33% transactions failed (77 out of 150), showing high system instability.
 
-2. Failure Demands by Merchant Category
+---
+
+### 2. Failures by Merchant Category
 
 SELECT 
     merchant_category,
@@ -76,9 +47,11 @@ WHERE status = 'Failed'
 GROUP BY merchant_category
 ORDER BY failed_transactions DESC;
 
-Resulting Diagnostic: Gateway drop-offs heavily cluster inside Entertainment (10), Food (9), and Shopping (9), signaling weak timeout handling during peak traffic windows.
+Insight: Entertainment, Food, and Shopping have highest failures.
 
-3. Temporal Usage Peaks (24H Window)
+---
+
+### 3. Peak Transaction Hours
 
 SELECT 
     HOUR(STR_TO_DATE(txn_time, '%H:%i')) AS hour,
@@ -87,11 +60,11 @@ FROM upi_transactions
 GROUP BY hour
 ORDER BY transactions DESC;
 
-Resulting Diagnostic: Clear bi-modal distribution:
-- 14:00 (Lunch peak)
-- 21:00–22:00 (Evening surge)
+Insight: Peak hours are 14:00 and 21:00–22:00.
 
-4. High-Value Concentration & Risk Matrix
+---
+
+### 4. Top High-Value Users
 
 SELECT 
     user_id,
@@ -101,29 +74,27 @@ GROUP BY user_id
 ORDER BY total_spent DESC
 LIMIT 5;
 
-Resulting Diagnostic: A massive 23.38% of total transaction value (₹96,606.86) is driven by just 5 users.
+Insight: Top 5 users contribute 23.38% of total transaction value (₹96,606.86).
 
-💰 Top User Concentration
+## Key Insights
 
-User ID | Total Spend | Network Share
-7       | ₹20,298.85  | 4.91%
-44      | ₹19,966.97  | 4.83%
-25      | ₹19,393.94  | 4.69%
-18      | ₹18,671.51  | 4.52%
-20      | ₹18,275.59  | 4.42%
+- High gateway failure rate indicates system instability  
+- Food and Entertainment categories are most affected  
+- Clear peak load during afternoon and evening hours  
+- Revenue highly concentrated among few users  
 
-🚀 Strategic Business Recommendations
+## Recommendations
 
-- Automated API Gateway Failovers: Dynamic rerouting during 21:00–23:00 peak load for Food & Entertainment categories.
-- Dedicated VIP Server Pipelines: High-priority routing for top 5 users to protect revenue stability.
-- Tier-2 Market Expansion Strategy: Focus on high-growth hubs like Indore (22 transactions) and Jaipur (16 transactions).
-- Maintenance Window Optimization: Schedule updates between 05:00–08:00 to avoid disruption during peak load.
+- Implement gateway failover system during peak hours  
+- Optimize routing for high-traffic merchant categories  
+- Protect high-value user transactions with priority pipelines  
+- Focus expansion on Tier-2 cities like Indore and Jaipur  
+- Schedule maintenance during off-peak hours (05:00–08:00)  
 
 
-👩‍💻 Author
+
+## Author
 
 Aditi Paitandy  
 GitHub: github.com/aditipaitandy  
-Role: Data Analyst / Database Administrator
-
-Let’s discuss SQL scaling, database diagnostics, and fintech strategies!
+Data Analyst
