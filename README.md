@@ -1,4 +1,12 @@
 # UPI Transaction Ecosystem: Performance Diagnostics & SQL Analysis
+# UPI Transaction Ecosystem: Performance Diagnostics & SQL Analysis
+
+<p align="left">
+  <img src="https://img.shields.io/badge/SQL-Advanced-blue?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data%20Analysis-Project-green?style=for-the-badge&logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/UPI-FinTech-orange?style=for-the-badge&logo=google-pay&logoColor=white" />
+  <img src="https://img.shields.io/badge/Database-Optimization-red?style=for-the-badge&logo=postgresql&logoColor=white" />
+</p>
 
 ![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge&logo=mysql&logoColor=white)
 
