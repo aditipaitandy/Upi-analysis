@@ -1,100 +1,63 @@
 # UPI Transaction Ecosystem: Performance Diagnostics & SQL Analysis
 
-An end-to-end relational database diagnostics and performance evaluation of a UPI transaction ecosystem. Mapped against 150 transaction events with a total processed volume of ₹4,13,198.86, this project isolates severe gateway timeout thresholds, identifies high-growth Tier-2 geographic hubs, and establishes a concrete risk mitigation roadmap for high-value cohorts.
+![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge&logo=mysql&logoColor=white)
 
-## Project Overview
-
-Digital payment systems face latency, gateway failures, and uneven load distribution. This project analyzes:
-
-- Transaction failure patterns  
-- Merchant category friction  
-- Regional spending behavior  
-- High-value user concentration risk  
-
-## Database Schema
-
-upi_users:
-user_id (PK), age, gender, city, city_tier
-
-upi_transactions:
-txn_id (PK), user_id (FK), txn_date, txn_time, amount, merchant_category, city, status, payment_mode, device_type
-
-upi_merchant_categories:
-merchant_id (PK), category, channel, avg_rating
-
-## SQL Analysis
-
-### 1. Failure Rate
-
-SELECT 
-    ROUND(
-        SUM(CASE WHEN status = 'Failed' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 
-        2
-    ) AS failure_rate_percent
-FROM upi_transactions;
-
-Insight: 51.33% transactions failed (77 out of 150), showing high system instability.
+An end-to-end relational database diagnostics and performance evaluation of a UPI transaction ecosystem. Mapped against 150 transaction events with a total processed volume of ₹4,13,198.86, this project identifies system bottlenecks, high-growth Tier-2 hubs, and high-value transaction risks.
 
 ---
 
-### 2. Failures by Merchant Category
+## 📌 Project Overview
 
-SELECT 
-    merchant_category,
-    COUNT(*) AS failed_transactions
-FROM upi_transactions
-WHERE status = 'Failed'
-GROUP BY merchant_category
-ORDER BY failed_transactions DESC;
+Digital payment systems are highly sensitive to latency, gateway failures, and uneven traffic distribution.  
+This project focuses on analyzing real transaction data to uncover performance issues and business insights.
 
-Insight: Entertainment, Food, and Shopping have highest failures.
+Key areas of analysis include:
 
----
-
-### 3. Peak Transaction Hours
-
-SELECT 
-    HOUR(STR_TO_DATE(txn_time, '%H:%i')) AS hour,
-    COUNT(*) AS transactions
-FROM upi_transactions
-GROUP BY hour
-ORDER BY transactions DESC;
-
-Insight: Peak hours are 14:00 and 21:00–22:00.
+- Transaction failure patterns across the system  
+- Merchant categories with high operational friction  
+- Peak transaction time windows  
+- Geographic distribution of user activity  
+- High-value user concentration and revenue dependency risk  
 
 ---
 
-### 4. Top High-Value Users
+## 📂 Project Report
 
-SELECT 
-    user_id,
-    SUM(amount) AS total_spent
-FROM upi_transactions
-GROUP BY user_id
-ORDER BY total_spent DESC
-LIMIT 5;
+👉 [View Full Project PDF](https://github.com/aditipaitandy/Upi-analysis/blob/main/UPI%20Transaction%20Analysis.pdf)
 
-Insight: Top 5 users contribute 23.38% of total transaction value (₹96,606.86).
+---
 
-## Key Insights
+## 🗄️ Database Structure
 
-- High gateway failure rate indicates system instability  
-- Food and Entertainment categories are most affected  
-- Clear peak load during afternoon and evening hours  
-- Revenue highly concentrated among few users  
+upi_users: Stores user demographic and location details including age, gender, city, and tier classification.
 
-## Recommendations
+upi_transactions: Contains transaction-level records such as transaction ID, user ID, amount, timestamp, merchant category, status, payment mode, and device type.
 
-- Implement gateway failover system during peak hours  
-- Optimize routing for high-traffic merchant categories  
-- Protect high-value user transactions with priority pipelines  
-- Focus expansion on Tier-2 cities like Indore and Jaipur  
-- Schedule maintenance during off-peak hours (05:00–08:00)  
+upi_merchant_categories: Holds merchant classification data including category type, channel, and rating information.
 
+---
 
+## 💡 Key Insights
 
-## Author
+- High transaction failure rate indicates gateway instability  
+- Food, Entertainment, and Shopping categories face maximum friction  
+- Clear peak usage during afternoon and evening hours  
+- Revenue is highly concentrated among a small group of users  
+- Tier-2 cities show strong growth momentum  
+
+---
+
+## 🚀 Business Recommendations
+
+- Implement automated gateway failover during peak hours  
+- Optimize load balancing for high-traffic merchant categories  
+- Introduce priority routing for high-value users  
+- Focus expansion on emerging Tier-2 cities  
+- Schedule maintenance during off-peak hours  
+
+---
+
+## 👩‍💻 Author
 
 Aditi Paitandy  
 GitHub: github.com/aditipaitandy  
-Data Analyst
