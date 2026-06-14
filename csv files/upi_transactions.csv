@@ -1,0 +1,151 @@
+txn_id,user_id,txn_date,txn_time,amount,merchant_category,city,payment_mode,status,device_type
+1,33,2025-03-09,15:16,4528.58,Food,Delhi,BHIM,Failed,Mobile
+2,22,2025-01-01,04:40,4899.39,Travel,Jaipur,BHIM,Success,Mobile
+3,45,2025-01-20,04:34,199.42,Shopping,Indore,GPay,Failed,Mobile
+4,20,2025-01-11,11:57,4666.78,Food,Pune,GPay,Success,Web
+5,23,2025-01-27,17:56,4376.07,Recharge,Mumbai,GPay,Success,Mobile
+6,2,2025-04-16,05:47,4623.95,Bills,Bangalore,Paytm,Success,Web
+7,25,2025-01-28,01:54,2364.04,Fuel,Jaipur,Paytm,Failed,Mobile
+8,2,2025-02-27,21:12,2004.36,Entertainment,Delhi,Paytm,Failed,Web
+9,26,2025-05-11,21:53,2690.35,Food,Delhi,Paytm,Success,Web
+10,3,2025-03-09,03:38,2184.13,Shopping,Hyderabad,PhonePe,Failed,Web
+11,17,2025-02-18,01:45,2191.57,Education,Lucknow,GPay,Failed,UPI QR
+12,43,2025-01-18,10:39,1583.3,Groceries,Chennai,Paytm,Failed,UPI QR
+13,45,2025-04-14,09:35,653.89,Bills,Hyderabad,GPay,Failed,UPI QR
+14,1,2025-05-21,09:18,1066.71,Recharge,Indore,Paytm,Failed,UPI QR
+15,44,2025-04-24,06:32,2376.47,Travel,Delhi,Paytm,Failed,Mobile
+16,44,2025-03-02,09:14,4036.68,Travel,Kolkata,PhonePe,Success,UPI QR
+17,30,2025-01-19,13:56,3156.23,Fuel,Hyderabad,BHIM,Failed,Mobile
+18,42,2025-02-07,22:00,4465.45,Groceries,Hyderabad,GPay,Success,Web
+19,30,2025-05-13,01:35,1261.01,Groceries,Jaipur,GPay,Failed,Web
+20,36,2025-05-16,19:20,4751.2,Healthcare,Indore,BHIM,Failed,Mobile
+21,29,2025-05-02,08:48,1251.25,Entertainment,Lucknow,BHIM,Success,UPI QR
+22,5,2025-04-23,22:18,1187.78,Shopping,Pune,PhonePe,Success,Mobile
+23,25,2025-03-01,22:09,3537.97,Groceries,Hyderabad,BHIM,Failed,Web
+24,27,2025-04-30,01:13,4167.8,Bills,Indore,PhonePe,Failed,UPI QR
+25,23,2025-01-02,09:48,1962.13,Bills,Lucknow,GPay,Failed,Mobile
+26,28,2025-03-11,15:01,1956.51,Bills,Mumbai,BHIM,Success,Web
+27,2,2025-05-17,12:37,2830.67,Food,Delhi,BHIM,Success,UPI QR
+28,4,2025-02-16,08:24,1650.22,Healthcare,Pune,Paytm,Failed,UPI QR
+29,17,2025-04-18,02:30,116.53,Education,Kolkata,Paytm,Success,Web
+30,50,2025-01-18,20:02,3776.08,Fuel,Bangalore,PhonePe,Success,Mobile
+31,31,2025-02-02,21:07,2828.57,Fuel,Jaipur,Paytm,Failed,Mobile
+32,50,2025-01-30,05:19,558.33,Food,Chennai,BHIM,Failed,Web
+33,5,2025-02-20,18:44,4156.25,Fuel,Delhi,Paytm,Success,Web
+34,23,2025-01-11,17:27,3314.38,Groceries,Lucknow,Paytm,Success,UPI QR
+35,7,2025-05-06,13:23,3185.21,Healthcare,Mumbai,BHIM,Success,Web
+36,42,2025-05-14,08:39,4044.83,Education,Jaipur,BHIM,Failed,Web
+37,21,2025-03-10,07:53,4674.42,Entertainment,Jaipur,GPay,Failed,Web
+38,22,2025-04-08,00:31,4257.75,Travel,Jaipur,GPay,Failed,UPI QR
+39,18,2025-03-29,19:44,4402.93,Education,Kolkata,GPay,Success,Mobile
+40,32,2025-04-15,17:48,1216.81,Healthcare,Jaipur,BHIM,Success,Mobile
+41,15,2025-03-17,12:44,1231.66,Recharge,Pune,BHIM,Failed,UPI QR
+42,22,2025-05-21,11:44,2279.65,Entertainment,Chennai,GPay,Success,Web
+43,21,2025-02-19,03:47,2688.6,Travel,Bangalore,GPay,Failed,UPI QR
+44,49,2025-05-31,16:38,1429.33,Groceries,Bangalore,Paytm,Success,UPI QR
+45,20,2025-02-15,00:45,2679.99,Entertainment,Kolkata,PhonePe,Failed,Web
+46,41,2025-02-02,15:06,4366.14,Recharge,Chennai,BHIM,Failed,UPI QR
+47,12,2025-03-29,01:16,4706.5,Healthcare,Delhi,PhonePe,Failed,UPI QR
+48,37,2025-01-19,20:43,286.97,Travel,Indore,Paytm,Success,Mobile
+49,36,2025-01-31,13:38,2988.71,Recharge,Bangalore,BHIM,Failed,UPI QR
+50,38,2025-03-18,13:19,2851.77,Food,Indore,PhonePe,Success,Web
+51,17,2025-02-24,21:05,802.14,Travel,Lucknow,PhonePe,Success,Mobile
+52,29,2025-04-15,22:38,2360.16,Food,Bangalore,Paytm,Failed,Web
+53,5,2025-04-27,21:14,4621.08,Recharge,Bangalore,BHIM,Success,Web
+54,42,2025-02-27,04:58,1342.85,Travel,Delhi,PhonePe,Success,UPI QR
+55,19,2025-05-26,14:07,2354.12,Entertainment,Hyderabad,Paytm,Failed,UPI QR
+56,39,2025-01-21,01:56,2171.5,Shopping,Indore,Paytm,Success,Mobile
+57,44,2025-02-28,18:37,4754.92,Entertainment,Indore,PhonePe,Success,UPI QR
+58,42,2025-05-13,14:58,1405.22,Recharge,Hyderabad,BHIM,Success,UPI QR
+59,27,2025-03-31,10:20,3357.26,Travel,Pune,BHIM,Failed,UPI QR
+60,49,2025-04-13,17:02,2285.03,Shopping,Chennai,Paytm,Success,UPI QR
+61,1,2025-05-12,21:55,2722.12,Bills,Kolkata,GPay,Failed,Web
+62,41,2025-05-08,14:48,277.03,Entertainment,Lucknow,GPay,Failed,UPI QR
+63,8,2025-05-05,00:40,3052.18,Fuel,Mumbai,Paytm,Success,Web
+64,6,2025-04-15,07:53,4566.39,Healthcare,Delhi,GPay,Failed,Web
+65,33,2025-03-16,22:17,2089.14,Healthcare,Jaipur,GPay,Failed,Web
+66,25,2025-02-07,06:58,3004.9,Travel,Delhi,Paytm,Failed,UPI QR
+67,18,2025-05-10,00:18,3635.73,Recharge,Indore,BHIM,Success,UPI QR
+68,31,2025-05-18,11:21,2768.55,Education,Hyderabad,BHIM,Failed,Mobile
+69,37,2025-03-03,12:14,4282.94,Bills,Kolkata,Paytm,Failed,Web
+70,25,2025-04-08,21:50,4107.32,Travel,Jaipur,PhonePe,Success,Web
+71,7,2025-03-26,14:06,2639.24,Healthcare,Kolkata,GPay,Failed,Web
+72,5,2025-02-09,15:50,4846.63,Shopping,Indore,BHIM,Success,UPI QR
+73,25,2025-05-17,10:40,3599.21,Healthcare,Lucknow,PhonePe,Success,Mobile
+74,15,2025-03-15,23:05,2181.18,Groceries,Delhi,BHIM,Success,Web
+75,2,2025-03-18,01:20,3984.79,Entertainment,Pune,Paytm,Failed,Mobile
+76,34,2025-03-04,13:36,3415.37,Travel,Mumbai,GPay,Success,Web
+77,40,2025-04-08,21:15,2498.38,Recharge,Mumbai,GPay,Failed,Web
+78,30,2025-03-07,08:42,66.8,Healthcare,Chennai,GPay,Success,UPI QR
+79,38,2025-03-30,09:40,4810.9,Entertainment,Jaipur,Paytm,Success,UPI QR
+80,7,2025-05-04,07:24,2868.18,Recharge,Chennai,Paytm,Success,Web
+81,18,2025-04-12,00:36,4328.04,Food,Indore,BHIM,Failed,Mobile
+82,15,2025-04-01,20:12,3112.04,Travel,Delhi,PhonePe,Failed,UPI QR
+83,38,2025-01-09,11:46,674.43,Entertainment,Pune,BHIM,Success,Mobile
+84,35,2025-02-03,11:33,2518.94,Entertainment,Mumbai,Paytm,Failed,UPI QR
+85,8,2025-03-28,14:04,720.97,Fuel,Hyderabad,Paytm,Success,UPI QR
+86,17,2025-01-04,17:07,2284.83,Entertainment,Indore,BHIM,Failed,Mobile
+87,31,2025-03-01,00:39,4423.49,Education,Pune,GPay,Success,Web
+88,45,2025-04-29,09:41,2053.31,Travel,Kolkata,PhonePe,Failed,UPI QR
+89,7,2025-01-30,07:56,2696.98,Bills,Jaipur,Paytm,Failed,Web
+90,27,2025-02-09,20:06,4171.79,Recharge,Hyderabad,Paytm,Success,Web
+91,14,2025-04-05,14:28,4753.76,Shopping,Delhi,Paytm,Failed,Mobile
+92,18,2025-04-12,06:07,4746.07,Healthcare,Delhi,GPay,Success,Mobile
+93,16,2025-03-27,04:50,2831.6,Groceries,Lucknow,GPay,Success,Mobile
+94,50,2025-03-26,04:50,4504.64,Food,Chennai,GPay,Success,Web
+95,12,2025-03-06,03:42,4334.91,Travel,Kolkata,Paytm,Success,Web
+96,2,2025-03-24,05:16,280.95,Bills,Lucknow,PhonePe,Success,UPI QR
+97,50,2025-04-25,11:32,2976.46,Healthcare,Lucknow,GPay,Success,Web
+98,20,2025-05-14,14:41,4820.85,Food,Jaipur,BHIM,Failed,Web
+99,32,2025-01-28,22:58,2228.94,Groceries,Pune,GPay,Success,Mobile
+100,40,2025-03-12,20:37,2750.82,Shopping,Hyderabad,Paytm,Failed,Web
+101,7,2025-04-21,22:07,4266.91,Education,Bangalore,BHIM,Failed,Mobile
+102,22,2025-04-16,14:25,2091.63,Groceries,Pune,BHIM,Failed,Web
+103,24,2025-03-07,04:43,4616.47,Groceries,Delhi,PhonePe,Success,UPI QR
+104,48,2025-01-25,23:23,4062.61,Education,Kolkata,Paytm,Success,UPI QR
+105,43,2025-04-01,13:55,4580.9,Food,Chennai,Paytm,Failed,Mobile
+106,33,2025-05-28,06:09,3290.55,Fuel,Delhi,Paytm,Failed,Mobile
+107,37,2025-03-13,07:51,2156.98,Education,Indore,PhonePe,Failed,Mobile
+108,18,2025-02-16,22:48,1558.74,Shopping,Pune,PhonePe,Success,Mobile
+109,43,2025-05-25,12:04,726.54,Food,Delhi,GPay,Failed,UPI QR
+110,22,2025-04-27,05:23,1571.95,Shopping,Indore,PhonePe,Success,Mobile
+111,49,2025-02-10,19:03,3376.36,Entertainment,Jaipur,BHIM,Failed,Web
+112,27,2025-04-24,08:13,3779.62,Groceries,Pune,BHIM,Success,UPI QR
+113,34,2025-05-05,21:19,246.18,Bills,Indore,PhonePe,Success,Mobile
+114,14,2025-03-19,04:48,1292.49,Shopping,Delhi,PhonePe,Failed,Web
+115,12,2025-04-21,04:24,2672.26,Fuel,Lucknow,Paytm,Success,UPI QR
+116,28,2025-01-11,00:29,4607.39,Shopping,Indore,BHIM,Failed,Web
+117,19,2025-04-17,03:25,123.87,Shopping,Mumbai,BHIM,Failed,Mobile
+118,7,2025-04-22,07:27,2952.58,Education,Delhi,BHIM,Failed,Web
+119,15,2025-03-28,10:49,857.3,Education,Delhi,GPay,Failed,UPI QR
+120,16,2025-02-07,03:09,1294.72,Travel,Indore,GPay,Success,Mobile
+121,30,2025-05-07,18:48,2905.75,Recharge,Indore,Paytm,Failed,Mobile
+122,5,2025-04-23,15:28,3164.3,Entertainment,Indore,PhonePe,Failed,Web
+123,20,2025-01-19,14:28,207.28,Shopping,Chennai,PhonePe,Success,Web
+124,25,2025-05-10,14:37,2780.5,Food,Jaipur,GPay,Failed,Web
+125,33,2025-05-02,04:03,2263.61,Shopping,Delhi,GPay,Success,Mobile
+126,29,2025-04-23,16:33,3056.83,Shopping,Pune,Paytm,Failed,UPI QR
+127,44,2025-03-28,19:03,3950.35,Shopping,Delhi,Paytm,Success,Web
+128,19,2025-04-09,08:46,4260.8,Recharge,Mumbai,Paytm,Success,Web
+129,23,2025-02-06,09:41,3498.43,Bills,Mumbai,PhonePe,Failed,Web
+130,42,2025-04-07,10:52,656.41,Education,Delhi,BHIM,Failed,Mobile
+131,20,2025-04-03,05:13,1721.83,Healthcare,Bangalore,GPay,Success,Mobile
+132,19,2025-01-20,03:32,3858.96,Education,Kolkata,Paytm,Success,Web
+133,10,2025-04-07,05:11,4160.1,Recharge,Mumbai,BHIM,Success,UPI QR
+134,44,2025-04-04,23:15,4848.55,Recharge,Chennai,BHIM,Success,Web
+135,20,2025-03-03,15:57,4178.86,Shopping,Indore,BHIM,Failed,UPI QR
+136,33,2025-04-08,16:26,4832.02,Fuel,Indore,GPay,Failed,Mobile
+137,24,2025-05-04,17:59,530.9,Education,Delhi,Paytm,Success,Mobile
+138,29,2025-03-11,16:09,4158.61,Groceries,Bangalore,BHIM,Failed,Mobile
+139,4,2025-04-17,12:32,1882.33,Bills,Delhi,Paytm,Success,Mobile
+140,7,2025-03-23,22:41,1689.75,Travel,Mumbai,PhonePe,Failed,UPI QR
+141,49,2025-02-05,22:30,2254.04,Food,Delhi,PhonePe,Failed,Mobile
+142,36,2025-02-08,23:38,2648.3,Groceries,Chennai,GPay,Failed,Mobile
+143,16,2025-01-13,13:40,3973.62,Healthcare,Delhi,PhonePe,Failed,Web
+144,2,2025-05-18,20:32,2883.74,Travel,Chennai,BHIM,Success,Web
+145,16,2025-04-01,18:26,952.82,Groceries,Lucknow,Paytm,Success,Web
+146,33,2025-05-20,16:35,121.26,Healthcare,Kolkata,BHIM,Failed,UPI QR
+147,23,2025-01-05,02:22,1220.81,Groceries,Indore,Paytm,Success,Mobile
+148,35,2025-04-01,10:52,3221.12,Healthcare,Jaipur,GPay,Success,Mobile
+149,3,2025-04-28,09:12,238.16,Fuel,Kolkata,Paytm,Failed,Web
+150,35,2025-04-12,15:16,202.37,Fuel,Chennai,Paytm,Success,Web
